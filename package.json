@@ -1,6 +1,11 @@
 {
-  name llm-collector,
-  type module,
-  scripts { start node collector.js },
-  dependencies { express ^4.18.0 }
+  "name": "llm-collector",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node collector.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
 }
