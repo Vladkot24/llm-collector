@@ -47,4 +47,5 @@ app.get('/requests', (req, res) => {
   res.json({ count: lines.length, requests: lines });
 });
 
-app.listen(3000, () => console.log('Collector running'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Collector running on port ${PORT}`));
