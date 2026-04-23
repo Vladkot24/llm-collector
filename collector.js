@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 // Сюда отправляем запросы
 app.post('/collect', (req, res) => {
-  if (req.headers['x-api-key'] !== API_KEY) {
+  if (req.headers['x-api-key'] !== mykey-abc123) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
